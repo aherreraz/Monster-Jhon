@@ -20,7 +20,9 @@ public class Comer : MonoBehaviour {
         {
             // TODO anotar punto
             print("+1 punto");
-            Destroy(collision.gameObject);
+            collision.GetComponent<Animator>().SetTrigger("Die");
+            collision.GetComponent<Mosca>().enabled = false;
+            Destroy(collision.gameObject, 0.5f);
         }
     }
 }

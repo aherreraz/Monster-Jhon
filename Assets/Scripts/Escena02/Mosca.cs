@@ -6,7 +6,7 @@ public class Mosca : MonoBehaviour
 {
     public float velocidad;
     public float tMin, tMax;
-    private Vector3 movimiento;
+    private Vector2 movimiento;
 	
 	private void Start ()
     {
