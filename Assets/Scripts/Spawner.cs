@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public Rect areaSpawn;
+    public Vector2 area;
     public float tMin, tMax;
-    public Mosca mosca;
+    public Mosca[] moscas;
 
     private void Start()
     {
@@ -18,11 +18,15 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             Vector3 posicion = new Vector3(
-                Random.Range(transform.position.x - areaSpawn.width / 2, transform.position.x + areaSpawn.width / 2),
-                Random.Range(transform.position.y - areaSpawn.height / 2, transform.position.y + areaSpawn.height / 2),
+                Random.Range(transform.position.x - area.x / 2, transform.position.x + area.x / 2),
+                Random.Range(transform.position.y - area.y / 2, transform.position.y + area.y / 2),
                 0);
-            Instantiate(mosca, posicion, Quaternion.identity);
+            Instantiate(moscas[Random.Range(0, moscas.Length)], posicion, Quaternion.identity);
             yield return new WaitForSeconds(Random.Range(tMin, tMax));
         }
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireCube(transform.position, new Vector3(area.x, area.y, 1));
     }
 }
