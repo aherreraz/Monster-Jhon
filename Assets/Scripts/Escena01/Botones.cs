@@ -5,11 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class Botones : MonoBehaviour {
 
-	public string escena;
+	public string escenaActual;
+	public string escenaSiguiente;
 
 	// ==================================
 	public void Restart () {
 
-		SceneManager.LoadScene (escena);
+		SceneManager.LoadScene (escenaActual);
+	}
+
+	// ==================================
+	public void PasarEscena () {
+	
+		SceneManager.LoadScene (escenaSiguiente);
 	}
 }
