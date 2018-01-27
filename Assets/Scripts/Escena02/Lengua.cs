@@ -21,7 +21,7 @@ public class Lengua : MonoBehaviour
         yield return new WaitForSeconds(t);
         lengua.GetComponent<SpriteRenderer>().enabled = false;
         finLengua.GetComponent<SpriteRenderer>().enabled = false;
-        finLengua.transform.position = new Vector2(-1, -1);
+        finLengua.transform.position = new Vector2(-100, -100);
         GetComponent<SpriteRenderer>().sprite = sprites[0];
     }
 

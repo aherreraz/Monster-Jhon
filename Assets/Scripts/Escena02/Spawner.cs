@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public Vector2 area;
     public float tMin, tMax;
-    public Mosca[] moscas;
+    public GameObject[] spawns;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class Spawner : MonoBehaviour
                 Random.Range(transform.position.x - area.x / 2, transform.position.x + area.x / 2),
                 Random.Range(transform.position.y - area.y / 2, transform.position.y + area.y / 2),
                 0);
-            Instantiate(moscas[Random.Range(0, moscas.Length)], posicion, Quaternion.identity);
+            Instantiate(spawns[Random.Range(0, spawns.Length)], posicion, Quaternion.identity);
             yield return new WaitForSeconds(Random.Range(tMin, tMax));
         }
     }
