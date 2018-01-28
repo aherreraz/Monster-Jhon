@@ -60,6 +60,7 @@ public class Perseguir : MonoBehaviour {
 	public void OnCollisionEnter2D (Collision2D col) {
 	
 		if (col.gameObject.tag == "Obstaculos") {
+            GetComponent<AudioSource>().Play();
 			vida--;
 			Destroy (col.gameObject);
 		}
