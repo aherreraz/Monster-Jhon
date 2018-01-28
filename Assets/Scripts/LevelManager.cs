@@ -32,4 +32,9 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(t);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+    public IEnumerator LoadLevelAfter(string level, float t)
+    {
+        yield return new WaitForSeconds(t);
+        SceneManager.LoadScene(level);
+    }
 }
