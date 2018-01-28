@@ -26,6 +26,7 @@ public class Lengua : MonoBehaviour
 
 	public void DibujarLengua()
 	{
+        lengua.GetComponent<AudioSource>().Play();
 		screenMousePosition = new Vector2(Input.mousePosition.x / Screen.width * 9, Input.mousePosition.y / Screen.height * 16);
 		launchVector = screenMousePosition - transform.GetChild(0).position - posLengua;
 		float atan = Mathf.Atan2(launchVector.y, launchVector.x);
@@ -55,5 +56,9 @@ public class Lengua : MonoBehaviour
         {
             GetComponent<Animator>().SetTrigger("Eat");
         }
+    }
+    public void PlayDeathSound()
+    {
+        GetComponent<AudioSource>().Play();
     }
 }

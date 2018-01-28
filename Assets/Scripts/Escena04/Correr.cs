@@ -37,5 +37,9 @@ public class Correr : MonoBehaviour
             LevelManager.instance.ReloadLevelWithDelay(0.7f);
 		}
 	}
+    public void PlayDeathSound()
+    {
+        GetComponent<AudioSource>().Play();
+    }
 }
 
