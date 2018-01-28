@@ -27,5 +27,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Escena02.unity
     guid: 148ef7493d215084e8101b956e2226ce
   - enabled: 1
+    path: Assets/Scenes/Cutescene4.unity
+    guid: 17f286625833fab4a94789366c1dacae
+  - enabled: 1
+    path: Assets/Scenes/Cutescene5.unity
+    guid: e2ce3aab10376ce4d95835b19487a8d3
+  - enabled: 1
     path: Assets/Scenes/Escena04.unity
     guid: 55d3152abbf1c7548876289c110444fc
