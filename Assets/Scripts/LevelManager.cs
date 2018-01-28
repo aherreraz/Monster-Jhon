@@ -53,10 +53,16 @@ public class LevelManager : MonoBehaviour
     private void SetMusic(int sceneIndex)
     {
         if (levelMusicArray[sceneIndex])
+        {
             if (!GetComponent<AudioSource>().clip || levelMusicArray[sceneIndex].name != GetComponent<AudioSource>().clip.name)
+            {
                 SetTrack(sceneIndex);
+            }
+        }
         else
+        {
             GetComponent<AudioSource>().Stop();
+        }
     }
     private void SetTrack (int sceneIndex)
     {

@@ -75,6 +75,7 @@ public class Impulso : MonoBehaviour {
 
     public void Deshabilitar()
     {
+        GetComponent<AudioSource>().Play();
         GameManager.enJuego = false;
         rb.gravityScale = 0;
         gameObject.GetComponent<CircleCollider2D>().enabled = false;

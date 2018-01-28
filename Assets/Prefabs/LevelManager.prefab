@@ -134,14 +134,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelMusicArray:
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 8300000, guid: 3f31fb5fcd7727b45bf8846ffaf15cf6, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 3f31fb5fcd7727b45bf8846ffaf15cf6, type: 3}
+  - {fileID: 8300000, guid: 3f31fb5fcd7727b45bf8846ffaf15cf6, type: 3}
   - {fileID: 8300000, guid: 38f8a76f275db7c43af33978b0a05881, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 38f8a76f275db7c43af33978b0a05881, type: 3}
+  - {fileID: 8300000, guid: 38f8a76f275db7c43af33978b0a05881, type: 3}
+  - {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
+  - {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
   - {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
   - {fileID: 0}
   timers:

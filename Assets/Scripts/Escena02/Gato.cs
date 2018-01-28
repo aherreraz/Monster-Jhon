@@ -27,4 +27,8 @@ public class Gato : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(tMin, tMax));
         }
     }
+    public void PlaySoundDeath()
+    {
+        GetComponent<AudioSource>().Play();
+    }
 }

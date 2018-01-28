@@ -17,4 +17,8 @@ public class Paloma : MonoBehaviour
     {
         transform.Translate(movimiento * velocidad * Time.deltaTime);
     }
+    public void PlaySoundDeath()
+    {
+        GetComponent<AudioSource>().Play();
+    }
 }
