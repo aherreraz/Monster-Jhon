@@ -913,7 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   btnLeft: {fileID: 1466398186}
   btnRight: {fileID: 1365170534}
-  velocidad: 5
+  velocidad: 8
 --- !u!50 &1366448643
 Rigidbody2D:
   serializedVersion: 4
@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3200ab69fd41fde4694cbf46cf4d1cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadY: 5
+  velocidadY: 8
   target: {fileID: 1366448641}
   imgVida1: {fileID: 61816556}
   imgVida2: {fileID: 169570734}
