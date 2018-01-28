@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Menu : MonoBehaviour
+public class TapToContinue : MonoBehaviour
 {
     private void Update()
     {
