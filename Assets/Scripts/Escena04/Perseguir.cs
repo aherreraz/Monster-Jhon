@@ -25,7 +25,7 @@ public class Perseguir : MonoBehaviour {
 	// ==============================
 	void Update () {
 
-		if (GameManager.tiempo <= 20f) {
+		if (GameManager.instance.tiempo <= 20f) {
 			velocidadY = 8;
 		}
 

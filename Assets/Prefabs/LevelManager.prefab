@@ -144,3 +144,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
   - {fileID: 0}
+  timers:
+  - 0
+  - 0
+  - 0
+  - 5
+  - 0
+  - 0
+  - 15
+  - 0
+  - 0
+  - 30
+  - 0

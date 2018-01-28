@@ -7,6 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
     public AudioClip[] levelMusicArray;
+    public float[] timers;
 
 	private void Awake ()
     {
@@ -39,7 +40,8 @@ public class LevelManager : MonoBehaviour
     private IEnumerator ReloadLevel(float t)
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        int level = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(level);
     }
     private IEnumerator LoadNextLevelAfter(float t)
     {
@@ -61,5 +63,9 @@ public class LevelManager : MonoBehaviour
         GetComponent<AudioSource>().clip = levelMusicArray[sceneIndex];
         GetComponent<AudioSource>().loop = true;
         GetComponent<AudioSource>().Play();
+    }
+    public float GetTimer()
+    {
+        return timers[SceneManager.GetActiveScene().buildIndex];
     }
 }

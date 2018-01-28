@@ -52,13 +52,6 @@ public class Impulso : MonoBehaviour {
 
 			movimiento.x = direccion * 10f;
 			rb.velocity = movimiento;
-
-			if (GameManager.tiempo <= 0)
-            {
-                Explotar();
-                GameManager.tiempo = 5;
-                LevelManager.instance.ReloadLevelWithDelay(0.7f);
-			}
 		}
 	}
     
@@ -75,17 +68,16 @@ public class Impulso : MonoBehaviour {
     {
 		if (col.gameObject.tag == "Enemy")
         {
-            Explotar();
+            GetComponent<Animator>().SetTrigger("Die");
             LevelManager.instance.ReloadLevelWithDelay(0.7f);
         }
 	}
 
-    private void Explotar()
+    public void Deshabilitar()
     {
         GameManager.enJuego = false;
         rb.gravityScale = 0;
         gameObject.GetComponent<CircleCollider2D>().enabled = false;
-        transform.GetChild(0).gameObject.SetActive(false);
-        GetComponent<Animator>().SetTrigger("Die");
+        transform.GetChild(0).gameObject.SetActive(false);        
     }
 }

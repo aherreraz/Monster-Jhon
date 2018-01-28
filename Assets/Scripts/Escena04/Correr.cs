@@ -32,9 +32,9 @@ public class Correr : MonoBehaviour {
 
 		rb.velocity = new Vector2 (direccion*10f, velocidad);
 
-		if (GameManager.tiempo <= 20) {
+		if (GameManager.instance.tiempo <= 20) {
 			velocidad = 8;
-		} else if (GameManager.tiempo <= 0) {
+		} else if (GameManager.instance.tiempo <= 0) {
 			//gameOver
 		}
 	}
