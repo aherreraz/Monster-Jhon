@@ -16,9 +16,7 @@ public class LevelManager : MonoBehaviour
             instance = this;
         }
         else if (instance != this)
-        {
             Destroy(this);
-        }
 	}
     public void LoadLevel(string level)
     {
@@ -53,14 +51,15 @@ public class LevelManager : MonoBehaviour
     private void SetMusic(int sceneIndex)
     {
         if (levelMusicArray[sceneIndex])
-        {
-            GetComponent<AudioSource>().clip = levelMusicArray[sceneIndex];
-            GetComponent<AudioSource>().loop = true;
-            GetComponent<AudioSource>().Play();
-        }
+            if (!GetComponent<AudioSource>().clip || levelMusicArray[sceneIndex].name != GetComponent<AudioSource>().clip.name)
+                SetTrack(sceneIndex);
         else
-        {
             GetComponent<AudioSource>().Stop();
-        }
+    }
+    private void SetTrack (int sceneIndex)
+    {
+        GetComponent<AudioSource>().clip = levelMusicArray[sceneIndex];
+        GetComponent<AudioSource>().loop = true;
+        GetComponent<AudioSource>().Play();
     }
 }

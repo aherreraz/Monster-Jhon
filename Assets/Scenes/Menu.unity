@@ -152,6 +152,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f31fb5fcd7727b45bf8846ffaf15cf6, type: 3}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f31fb5fcd7727b45bf8846ffaf15cf6, type: 3}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38f8a76f275db7c43af33978b0a05881, type: 3}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38f8a76f275db7c43af33978b0a05881, type: 3}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
+    - target: {fileID: 114037809270490000, guid: 8da0e264483359744bcb22ba4e94d10a,
+        type: 2}
+      propertyPath: levelMusicArray.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0f17087cbf3ca11428379ea29561ca07, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8da0e264483359744bcb22ba4e94d10a, type: 2}
   m_IsPrefabParent: 0
