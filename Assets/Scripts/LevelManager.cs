@@ -27,14 +27,22 @@ public class LevelManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    public IEnumerator ReloadLevel(float t)
+    public void ReloadLevelWithDelay(float t)
+    {
+        StartCoroutine(ReloadLevel(t));
+    }
+    public void LoadNextLevelWithDelay(float t)
+    {
+        StartCoroutine(LoadNextLevelAfter(t));
+    }
+    private IEnumerator ReloadLevel(float t)
     {
         yield return new WaitForSeconds(t);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public IEnumerator LoadLevelAfter(string level, float t)
+    private IEnumerator LoadNextLevelAfter(float t)
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene(level);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
