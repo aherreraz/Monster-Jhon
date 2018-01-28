@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager instance;
+    public AudioClip[] levelMusicArray;
 
 	private void Awake ()
     {
@@ -25,7 +26,9 @@ public class LevelManager : MonoBehaviour
     }
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        SetMusic(nextLevel);
+        SceneManager.LoadScene(nextLevel);
     }
     public void ReloadLevelWithDelay(float t)
     {
@@ -43,6 +46,21 @@ public class LevelManager : MonoBehaviour
     private IEnumerator LoadNextLevelAfter(float t)
     {
         yield return new WaitForSeconds(t);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        int nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
+        SetMusic(nextLevel);
+        SceneManager.LoadScene(nextLevel);
+    }
+    private void SetMusic(int sceneIndex)
+    {
+        if (levelMusicArray[sceneIndex])
+        {
+            GetComponent<AudioSource>().clip = levelMusicArray[sceneIndex];
+            GetComponent<AudioSource>().loop = true;
+            GetComponent<AudioSource>().Play();
+        }
+        else
+        {
+            GetComponent<AudioSource>().Stop();
+        }
     }
 }
