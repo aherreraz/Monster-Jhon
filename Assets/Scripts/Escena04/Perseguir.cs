@@ -43,7 +43,7 @@ public class Perseguir : MonoBehaviour {
 			imgVida2.SetActive (false);
 		} else if (vida <= 0) {
 			imgVida3.SetActive (false);
-			//gana el player
+            LevelManager.instance.LoadNextLevel();
 		} 
 	}
 

@@ -35,3 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Escena04.unity
     guid: 55d3152abbf1c7548876289c110444fc
+  - enabled: 1
+    path: Assets/Scenes/Cutescene6.unity
+    guid: 2b2fc9bc2d9ec4a459b77e3161096346

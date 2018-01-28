@@ -741,7 +741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bddebfeed8b3a4d8aa6f8281f39c70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 0.3
+  velocidad: 0.7
 --- !u!1 &1365170532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,7 +1327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f6faa5a2df3571458191e1554fa7145, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jhon: {fileID: 0}
+  jhon: {fileID: 1366448639}
   tiempo: 0
   txtTiempo: {fileID: 923996993}
 --- !u!4 &1771358199
