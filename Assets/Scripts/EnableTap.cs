@@ -8,4 +8,8 @@ public class EnableTap : MonoBehaviour
     {
         transform.GetChild(0).gameObject.SetActive(true);
     }
+    public void ReturnToMenu()
+    {
+        LevelManager.instance.LoadLevel("Menu");
+    }
 }
