@@ -23,11 +23,11 @@ public class GenerarObstaculos : MonoBehaviour {
 		values = Random.Range (0, 3);
 
 		if (values == 0) {
-			xvalue = Vector2.right.x * -2f;
+			xvalue = Vector2.right.x * -1f;
 		} else if (values == 1) {
 			xvalue = 0f;
 		} else {
-			xvalue = Vector2.right.x * 2f;
+			xvalue = Vector2.right.x * 1f;
 		}
 	}
 

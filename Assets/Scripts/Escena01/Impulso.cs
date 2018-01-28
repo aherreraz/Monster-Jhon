@@ -73,7 +73,18 @@ public class Impulso : MonoBehaviour {
 
 		if (col.gameObject.tag == "Enemy") {
 			GameManager.enJuego = false;
-			SceneManager.LoadScene ("Escena01");
+			StartCoroutine (Animacion ());
 		}
+	}
+
+	// ==================================
+	private IEnumerator Animacion () {
+
+		rb.gravityScale = 0;
+		gameObject.GetComponent<CircleCollider2D> ().enabled = false;
+		burbujas.SetActive (false);
+		anim.SetBool ("Muerto", true);
+		yield return new WaitForSeconds (0.7f);
+		SceneManager.LoadScene ("Escena01");
 	}
 }

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Perseguir : MonoBehaviour {
 
-	public float velocidad;
+	public float velocidadY;
 	public Transform target;
+	public GameObject imgVida1, imgVida2, imgVida3;
 
+	int vida;
 	float horInput;
 	float verInput;
 	Rigidbody2D rb;
@@ -17,10 +19,15 @@ public class Perseguir : MonoBehaviour {
 
 		rb = GetComponent<Rigidbody2D> ();
 		movement = new Vector2 ();
+		vida = 3;
 	}
 
 	// ==============================
 	void Update () {
+
+		if (GameManager.tiempo <= 20f) {
+			velocidadY = 8;
+		}
 
 		if (transform.position.x < target.transform.position.x) {
 			horInput = 1;
@@ -29,14 +36,32 @@ public class Perseguir : MonoBehaviour {
 		} else if (transform.position.x == target.transform.position.x) {
 			horInput = 0;
 		}
+
+		if (vida == 2) {
+			imgVida1.SetActive (false);
+		} else if (vida == 1) {
+			imgVida2.SetActive (false);
+		} else if (vida <= 0) {
+			imgVida3.SetActive (false);
+			//gana el player
+		} 
 	}
 
 	// ==============================
 	void FixedUpdate () {
 
 		movement = rb.velocity;
-		movement.x = horInput * velocidad;
-		movement.y = 1f;
+		movement.x = horInput * 3f;
+		movement.y = velocidadY;
 		rb.velocity = movement;
+	}
+
+	// ==============================
+	public void OnCollisionEnter2D (Collision2D col) {
+	
+		if (col.gameObject.tag == "Obstaculos") {
+			vida--;
+			Destroy (col.gameObject);
+		}
 	}
 }

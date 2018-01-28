@@ -30,13 +30,19 @@ public class Correr : MonoBehaviour {
 			direccion = Input.GetAxis ("Horizontal");
 		}
 
-		rb.velocity = new Vector2 (direccion*12f, velocidad);
+		rb.velocity = new Vector2 (direccion*10f, velocidad);
+
+		if (GameManager.tiempo <= 20) {
+			velocidad = 8;
+		} else if (GameManager.tiempo <= 0) {
+			//gameOver
+		}
 	}
 
 	// ==============================
 	public void OnCollisionEnter2D (Collision2D col) {
 
-		if (col.gameObject.tag == "Enemy") {
+		if (col.gameObject.tag == "Obstaculos") {
 			SceneManager.LoadScene ("Escena04");
 		}
 	}

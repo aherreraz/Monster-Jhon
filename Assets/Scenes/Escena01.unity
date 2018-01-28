@@ -548,8 +548,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 971826354}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.33, z: -0.19999981}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0.32999992, z: -0.19999981}
+  m_LocalScale: {x: 0.3, y: 0.3000003, z: 0.3000003}
   m_Children: []
   m_Father: {fileID: 1188907003}
   m_RootOrder: 0
@@ -665,7 +665,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: -634426867
@@ -716,7 +716,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 20
+      scalar: 15
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4134,12 +4134,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: -3.5
+  m_GravityScale: -3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1188907005
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4169,8 +4169,8 @@ MonoBehaviour:
   btnLeft: {fileID: 747642536}
   btnRight: {fileID: 2011714806}
   burbujas: {fileID: 971826354}
-  velocidad: 2
-  fuerza: -5
+  velocidad: 3
+  fuerza: -4
 --- !u!95 &1188907007
 Animator:
   serializedVersion: 3
@@ -4568,7 +4568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   escenaActual: Escena01
-  escenaSiguiente: Escena02
+  escenaSiguiente: Escena04
 --- !u!1 &1719878731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,7 +5025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.38431373, g: 0.24705882, b: 0.21960784, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5033,7 +5033,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a28211bcedb4b46469ed921347622692, type: 3}
     m_FontSize: 120
     m_FontStyle: 1
     m_BestFit: 0

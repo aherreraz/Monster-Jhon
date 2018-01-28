@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 	 
@@ -15,8 +16,12 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 
 		enJuego = true;
-		tiempo = 5;
-	}
+		if (SceneManager.GetActiveScene().name == "Escena01") {
+			tiempo = 5;
+		} else if (SceneManager.GetActiveScene().name == "Escena04") {
+			tiempo = 30;
+		}
+ 	}
 	
 	// ==================================
 	void Update () {
