@@ -12,4 +12,4 @@ Our game for the Lima Game Jam 2018. It tells Jhon's story, the son of a human a
 * Renzo Guido Evans
 ## Programming
 * Andrés Herrera Zapata
-* Alonso
+* Alonso Molina
