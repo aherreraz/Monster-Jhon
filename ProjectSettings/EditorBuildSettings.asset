@@ -9,32 +9,32 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: a037e81738db0bb4cb01b9cd402d85b7
   - enabled: 1
-    path: Assets/Scenes/Cutescene0.unity
+    path: Assets/Scenes/CutScene0.unity
     guid: f60725a5fd9f3554fbbf5c737f29c247
   - enabled: 1
-    path: Assets/Scenes/Cutescene1.unity
+    path: Assets/Scenes/CutScene1.unity
     guid: ae077ddd8e03c8a45a8c30dbcd81486b
   - enabled: 1
     path: Assets/Scenes/Escena01.unity
     guid: ed60e5826b04b0c4eb59b85d34282fd0
   - enabled: 1
-    path: Assets/Scenes/Cutescene2.unity
+    path: Assets/Scenes/CutScene2.unity
     guid: ba2d778b93b96c241bdb4e37b398ea59
   - enabled: 1
-    path: Assets/Scenes/Cutescene3.unity
+    path: Assets/Scenes/CutScene3.unity
     guid: 7a20d19ae0685734b8f9ac9c0f4cb6c5
   - enabled: 1
     path: Assets/Scenes/Escena02.unity
     guid: 148ef7493d215084e8101b956e2226ce
   - enabled: 1
-    path: Assets/Scenes/Cutescene4.unity
+    path: Assets/Scenes/CutScene4.unity
     guid: 17f286625833fab4a94789366c1dacae
   - enabled: 1
-    path: Assets/Scenes/Cutescene5.unity
+    path: Assets/Scenes/CutScene5.unity
     guid: e2ce3aab10376ce4d95835b19487a8d3
   - enabled: 1
     path: Assets/Scenes/Escena04.unity
     guid: 55d3152abbf1c7548876289c110444fc
   - enabled: 1
-    path: Assets/Scenes/Cutescene6.unity
+    path: Assets/Scenes/CutScene6.unity
     guid: 2b2fc9bc2d9ec4a459b77e3161096346
