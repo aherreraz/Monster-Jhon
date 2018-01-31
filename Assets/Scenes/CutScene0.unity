@@ -562,7 +562,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clips:
   - {fileID: 8300000, guid: 47544b17db136eb4b8ea3ecbe4b06bad, type: 3}
-  - {fileID: 8300000, guid: 5ba4ece955a054b449132324008297b3, type: 3}
 --- !u!82 &1826170062
 AudioSource:
   m_ObjectHideFlags: 0
@@ -630,7 +629,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:

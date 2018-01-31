@@ -55,9 +55,7 @@ public class LevelManager : MonoBehaviour
         if (levelMusicArray[sceneIndex])
         {
             if (!GetComponent<AudioSource>().clip || levelMusicArray[sceneIndex].name != GetComponent<AudioSource>().clip.name)
-            {
                 SetTrack(sceneIndex);
-            }
         }
         else
         {

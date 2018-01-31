@@ -658,7 +658,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -683,6 +683,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 47544b17db136eb4b8ea3ecbe4b06bad, type: 3}
-  - {fileID: 8300000, guid: 5ba4ece955a054b449132324008297b3, type: 3}
   - {fileID: 8300000, guid: 548db43801bcd2c44b04614626f76353, type: 3}

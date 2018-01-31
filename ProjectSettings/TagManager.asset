@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fin
+  - Enemy
+  - Obstaculos
+  - Food
   layers:
   - Default
   - TransparentFX
